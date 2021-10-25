@@ -1,0 +1,400 @@
+$button-color: #7c9473;
+$section1-color: #f1f2f0;
+$section2-color: #3f3f3f;
+$footer-color: #cfdac8;
+$subtitle-color: #cdd0cb;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+
+  body {
+    
+    font-family: "Poppins", sans-serif;
+
+    header {
+      width: 1366px;
+      margin: auto;
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+          margin: auto;
+          padding: 10px 0px;
+          font-size: 2.5rem;
+          font-weight: 700;
+          
+
+          a {
+            text-decoration: none;
+            color: black;
+          }
+
+          .logo-back {
+            color: $button-color;
+          }
+        }
+        .nav {
+          width: 70%;
+          
+          padding-left: 0;
+          margin: auto;
+          .nav-all {
+            display: flex;
+            justify-content: left;
+            // border: red solid 2px;
+
+            .nav-link {
+              list-style: none;
+              margin-left: 4rem;
+
+              &:first-child {
+                font-weight: 700;
+                margin-left: 0;
+              }
+
+              a {
+                font-size: 2rem;
+                text-decoration: none;
+                color: black;
+                // border: red solid 2px;
+              }
+            }
+          }
+        }
+        .nav-btn {
+          margin: auto;
+
+          a {
+            text-decoration: none;
+            color: $button-color;
+            font-weight: 700;
+            font-size: 2rem;
+            border: $button-color solid 5px;
+            padding: 5px 15px;
+            border-radius: 150px;
+          }
+        }
+      }
+    }
+
+    //section1
+    main {
+      background-color: $section1-color;
+
+      .section-1 {
+        display: flex;
+        justify-content: baseline;
+        width: 1366px;
+        margin: auto;
+        padding: 40px;
+        .info {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: 4rem 15rem 5rem 5rem;
+
+          width: 50%;
+          // border: red solid 2px;
+          padding-left: 5rem;
+          .sub-title {
+            font-size: 2rem;
+            color: $subtitle-color;
+            text-transform: uppercase;
+            letter-spacing: 1rem;
+          }
+          .title {
+            font-size: 4rem;
+          }
+          .btn-1{
+            color: white;
+            text-transform: capitalize;
+            background-color: $button-color;
+            display: inline-block;
+            width: 18rem;
+            height: fit-content;
+            text-decoration: none;
+            padding: 1rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            border-radius: 0 2rem  2rem 0 ;
+            text-align: center;
+          }
+          .btn-2{
+            color: white;
+            text-transform: capitalize;
+            background-color: $section2-color;
+            display: inline-block;
+            width: 15rem;
+            height: fit-content;
+            text-decoration: none;
+            padding: 1rem;
+            border-radius: 0 2rem  2rem 0 ;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+          }
+        }
+        .svg {
+          // border: red 2px solid;
+          margin: auto;
+          width: 50%;
+        }
+      }
+    }
+
+    .section-2 {
+      background-color: $section2-color;
+      height: 100vh;
+      // border: red 2px solid;
+
+      .head {
+        // border: red 2px solid;
+        height: 40vh;
+
+        h1 {
+          font-size: 10rem;
+          color: white;
+          text-transform: uppercase;
+          letter-spacing: 20px;
+          text-align: center;
+          padding: 30px 0px;
+
+          // border: red 2px solid;
+        }
+
+        .tree1 {
+          width: 320px;
+          position: relative;
+          top: -40rem;
+          left: 0%;
+
+          // border: red 2px solid;
+        }
+        .tree2 {
+          width: 320px;
+          position: relative;
+          top: -84rem;
+          left: 82.75%;
+
+          // border: red 2px solid;
+        }
+      }
+
+      .info-container {
+        width: 1366px;
+        margin: auto;
+
+        .info {
+          // border: red solid 2px;
+          display: flex;
+          justify-content: space-around;
+          width: 80%;
+          margin: auto;
+
+          .info-box {
+            // border: red solid 2px;
+            background-color: white;
+            border-radius: 100%;
+            width: 25rem;
+            height: 25rem;
+
+            .circle {
+            }
+
+            .info-text {
+              color: white;
+              text-transform: uppercase;
+              font-size: 3rem;
+              font-weight: 700;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+    .section-3 {
+      background-color: $button-color;
+      // border: red 2px solid;
+      height: 95vh;
+      
+
+      .title {
+        font-size: 10rem;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 20px;
+        text-align: center;
+        padding:  0px;
+
+        // border: red 2px solid;
+      }
+
+      .info {
+        // border: red solid 2px;
+      
+       
+        display: grid;
+        grid-template-columns: 30rem 30rem 30rem;
+        grid-template-rows: 30rem 25rem;
+        justify-content: center;
+        
+
+        width: 50%;
+
+        margin: auto;
+
+        .info-box {
+          // border: red solid 2px;
+          background-color: white;
+          border-radius: 100%;
+          width: 20rem;
+          height: 20rem;
+          
+          
+
+          .circle {
+           
+          }
+
+          .info-text {
+            color: white;
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .section-4{
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 95vh;
+
+    .container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: fit-content;
+    width: 100%;
+    max-width: 1200px;
+
+      .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 0px 30px;
+        padding: 15px;
+        
+        
+        border: $button-color solid 2px;
+
+        .image{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          // border: red solid 2px;  
+
+          img{
+            width: 100%;
+            max-width: 20rem;
+          height: 100%;
+          max-height: 20rem;
+          object-fit: cover;
+          border-radius: 100%;
+          }
+          
+        }
+        .text{
+          margin: 20px;
+          padding: 10px;
+          width: 100%;
+          .position{
+            font-size: clamp(15px,2vw,20px);
+            color: $subtitle-color;
+            text-align: left;
+          }
+          .name{
+            font-size: clamp(24px,3vw,36px);
+            color: $section2-color;
+            text-align: left;
+          }
+          .description{
+            font-size: clamp(12px,1.5vw,16px);
+            color: #7c9473;
+
+          }
+
+
+
+        }
+
+      }
+    }
+      
+
+    }
+
+    .footer{
+      background-color: #CFDAC8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+
+      .contactForm{
+        // border: red solid 2px;
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        flex-direction: column;
+        width: fit-content;
+        margin: 30px;
+      }
+
+      h4{
+        font-size: 30px;
+        text-align: left;
+      }
+
+      form{
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        flex-direction: column;
+
+        input{
+          width: 100%;
+        }
+
+      }
+      .formButton{
+        background-color: $button-color;
+        padding: 10px 25px;
+        border: 300px;
+        margin-top: 10px;
+        color:white;
+      }
+      .map{
+        width: 100%;
+        max-width: 500px;
+        height: 100%;
+        max-height: 500px;
+      }
+    }
+
+
+  }
+}
